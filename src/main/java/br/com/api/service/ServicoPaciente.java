@@ -189,7 +189,6 @@ public class ServicoPaciente {
         };
     }
 
-
     // Método para lidar com a rota de excluir usuário
     public static Route excluirPaciente() {
         return new Route() {
