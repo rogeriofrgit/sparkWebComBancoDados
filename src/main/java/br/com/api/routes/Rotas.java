@@ -1,7 +1,6 @@
 package br.com.api.routes;
 
 import br.com.api.routes.Rotas;
-
 import br.com.api.service.ServicoUsuario;
 
 import spark.Spark; 
@@ -16,6 +15,8 @@ public class Rotas {
         Spark.get("/consultar", ServicoUsuario.consultarTodosUsuarios());
         Spark.put("/alterar/:id", ServicoUsuario.alterarUsuario());
         Spark.delete("/excluir/:id", ServicoUsuario.excluirUsuario());
+
+
         
         Spark.get("/consultar/compras/usuario/:id", ServicoUsuario.consultarComprasPorUsuarioIdv1());
         //Spark.get("/consultar/compras/usuario/:id", ServicoUsuario.consultarComprasPorUsuarioIdv2());
